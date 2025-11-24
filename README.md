@@ -69,6 +69,7 @@ JavaЗадача: обязательное свойство value типа Class
 Класс Person помечен @Default(String.class).
 DefaultProcessor выводит ann.value().getName().
 ```
+```java
 Блок 3 — @ToString (п.3 задания)
 JavaЗадача: Mode YES/NO, по умолчанию YES. Поле с NO не попадает в результат.
 Пример работы:
@@ -79,6 +80,7 @@ Person{name=Алексей, age=25}
 Аннотация: перечисление Mode, default YES.
 Класс Person помечен @ToString, поле password — @ToString(NO).
 ToStringProcessor сканирует поля, пропускает те, где Mode.NO.
+```
 ```java
 Блок 4 — @Validate (п.4 задания)
 JavaЗадача: обязательное свойство Class[].
