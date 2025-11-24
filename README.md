@@ -13,6 +13,7 @@ Reflection API
 Собственные аннотации с @Retention(RUNTIME)
 
 # Состав проекта (файлы)
+```java
 textsrc/main/java/org/example/
 ├── annotations/             ← собственные аннотации
 │   ├── Invoke.java
@@ -39,7 +40,9 @@ textsrc/main/java/org/example/
 src/test/java/org/example/
     ├── DefaultAnnotationTest.java   ← параметризованный тест
     └── CacheAnnotationTest.java
+```
 # Задание 1 — Аннотации
+```java
 1. @Invoke
 textАннотация для методов. Обработчик автоматически вызывает все методы, помеченные @Invoke.
 Пример вывода:
@@ -76,7 +79,7 @@ textНеобязательное свойство value типа String[], по 
 Параметризованный тест (@ParameterizedTest)
 Проверка наличия аннотации и корректности значения value
 Статус: PASSED
-
+```
 # Тесты @Cache
 
 Проверка корректного чтения массива кешируемых областей
@@ -86,7 +89,7 @@ textНеобязательное свойство value типа String[], по 
 # Вывод программы (Main.java)
 text=== ЛАБОРАТОРНАЯ РАБОТА №6 — АННОТАЦИИ ===
 
-
+```java
 1. @Invoke
 Привет из @Invoke!
 Всё работает!
@@ -106,7 +109,7 @@ first = "Hello", second = 2025
 6. @Cache
 Кешируемые области: users orders products
 Кеш не настроен
-
+```
 реализованы все 6 аннотаций с указанными характеристиками;
 написаны обработчики через Reflection;
 реализованы параметризованные тесты JUnit;
